@@ -4,6 +4,17 @@ from django.db import models
 class TeamStanding(models.Model):
     """Represents a team's standing.
     """
+    class Meta:
+        """
+        """
+        unique_together = (
+            'source_timestamp', 'team_id', 'competition_id', 'season_id',)
+
+
+    source_timestamp = models.DateTimeField()
+    team_id = models.IntegerField()
+    competition_id = models.IntegerField()
+    season_id = models.IntegerField()
     against = models.IntegerField()
     drawn = models.IntegerField()
     goals_for = models.IntegerField()
