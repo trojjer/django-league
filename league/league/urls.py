@@ -19,6 +19,6 @@ from django.contrib import admin
 
 
 urlpatterns = [
-    url(r'^standings/', include('standings.urls')),
+    url(r'^', include('standings.urls')),
     url(r'^admin/', admin.site.urls),
 ]
