@@ -12,4 +12,5 @@ A virtualenv therefore needs to be created, either with `mkvirtualenv` or otherw
 $ pip install -r requires/install.pip
 $ cd league
 $ python manage.py migrate
+$ python manage.py runserver
 ```
