@@ -1,3 +1,4 @@
 .project
 .python-version
 __pycache__
+data/
